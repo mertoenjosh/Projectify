@@ -229,7 +229,7 @@ class FirestoreClass {
     }
 
     // UPDATE data on firebase
-    fun updateUserProfileData(activity: ProfilePageActivity, userHashMap: HashMap<String, Any>) {
+    fun updateUserProfileData(activity: Activity, userHashMap: HashMap<String, Any>) {
         var didEncounterError = false
         mFirestore.collection(Constants.USERS)
             .document(getCurrentUserId())
@@ -242,12 +242,21 @@ class FirestoreClass {
                 }
 
                 if (didEncounterError) {
-                    activity.hideProgressDialog()
+                    when (activity) {
+                        is ProfilePageActivity -> activity.hideProgressDialog()
+                        is MainActivity -> activity.hideProgressDialog()
+                    }
                     Toast.makeText(activity, "${updateTask.exception!!.message}",Toast.LENGTH_LONG).show()
                     return@addOnCompleteListener
                 }
 
-                activity.profileUpdateSuccess()
+                when (activity) {
+                    is ProfilePageActivity-> activity.profileUpdateSuccess()
+                    is MainActivity -> {
+                        activity.tokenUpdateSuccess()
+                    }
+                }
+
             }
     }
 
