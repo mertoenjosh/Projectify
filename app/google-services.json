@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248946024614",
+    "project_id": "projectify-001",
+    "storage_bucket": "projectify-001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248946024614:android:cafed65789cb2d45015467",
+        "android_client_info": {
+          "package_name": "com.mertoenjosh.projectify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248946024614-b745u5mv79q3tqq2djlqo2is589qp9ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl13-6iQ_ck_Ms3PoIomZrorRWiHxaw3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248946024614-b745u5mv79q3tqq2djlqo2is589qp9ou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
