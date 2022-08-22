@@ -9,7 +9,8 @@ You can assign members in the board a task in list and set a due date for the ta
 
 ## Features
 - Pure Kotlin
-- Cloud Firebase and Cloud Firestore for storage.
+- Firebase authentication
+- Firebase storage and Cloud Firestore as database and storage.
 - Firebase messaging service
 - Glide for image loading
 - Notifications
